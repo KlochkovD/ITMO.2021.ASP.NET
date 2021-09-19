@@ -5,16 +5,49 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <title>RVSP</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    
+   
+    <style type="text/css">
+        .auto-style1 {
+            width: 845px;
+            height: 521px;
+        }
+    </style>
+    
+   
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+        
+            
+            
+ <table class="auto-style1">
+ <tr>
+ <td colspan="2" style="height:100px">&nbsp;
+     <h2>RSVP</h2>
+ </td>
+ </tr>
+ <tr>
+ <td style="width:200px">&nbsp;
+ Меню
+ </td>
+ <td>
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+     </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="height:100px">&nbsp;
+ Нижний колонтитул
+ </td>
+ </tr>
+ </table>
+
+            
+            
+ </form>
+ 
 </body>
 </html>
