@@ -1,15 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Start.aspx.cs" Inherits="ASP.NET.Start" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Start.aspx.cs"  MasterPageFile="~/Site.Master"  Inherits="ASP.NET.Start" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-<link rel="stylesheet" href="Styles.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1" 
+runat="server">
+
  <div>
  <div class="rek">
  <h1>Приглашение на семинар</h1>
@@ -22,8 +16,5 @@
      <br/>
     <p><a href="Reg.aspx">Регистрация</a></p>
  </div>
-</form>
-</body>
-</html>
-
+</asp:Content>
 
