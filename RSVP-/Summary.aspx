@@ -1,15 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="ASP.NET.Summary" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" MasterPageFile="~/Site.Master" Inherits="ASP.NET.Summary" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
- <title>Участники семинара</title>
- <link rel="stylesheet" href="Styles.css" />
-</head>
-<body>
- <form id="form1" runat="server">
- <div>
+<asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1" 
+runat="server">
+
+
  <h2>Приглашения</h2>
  <h3>Выступающие с докладом: </h3>
  <table>
@@ -47,8 +41,6 @@ String.Format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td>",
 </body></html>
  </table>
  </div>
- </form>
-</body>
-</html>
+</asp:Content>
 
 
