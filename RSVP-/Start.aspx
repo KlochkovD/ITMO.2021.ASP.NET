@@ -13,8 +13,7 @@ runat="server">
  <div class="info">
  Семинар состоится 1 января 2020 года в 7.30
  </div>
-     <br/>
-    <p><a href="Reg.aspx">Регистрация</a></p>
+     
  </div>
 </asp:Content>
 

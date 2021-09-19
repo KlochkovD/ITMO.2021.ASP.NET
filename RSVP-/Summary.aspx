@@ -38,9 +38,9 @@ String.Format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td>",
  <%= GetNoShowHtml()%>
  </tbody>
  </table>
-</body></html>
- </table>
- </div>
+
+ 
+ 
 </asp:Content>
 
 
