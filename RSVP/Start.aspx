@@ -3,7 +3,9 @@
 
 <asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1" 
 runat="server">
-
+
+
+
  <div>
  <div class="rek">
  <h1>Приглашение на семинар<asp:ScriptManager ID="ScriptManager1" runat="server">

@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using System.Data.Entity;
 
 
-
 namespace ASP.NET
 {
     public partial class Reg : System.Web.UI.Page

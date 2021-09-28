@@ -25,6 +25,7 @@
                                     <asp:MenuItem NavigateUrl="~/Reg.aspx" Text="Регистрация"/>
                                     <asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Отчет о регистрации"/>
                                     <asp:MenuItem NavigateUrl="~/About.aspx" Text="Подробности"/>
+                                    <asp:MenuItem NavigateUrl="~/SummaryBD.aspx" Text="Список участников"/>
                                 </Items>
                             </asp:Menu>
                         </div>
@@ -56,7 +57,7 @@
                                     <a href="About.aspx">Подробности</a>
 
                                 </li> 
-
+                                <li><a href="SummaryBD.aspx">Список участников</a></li>
                             </ul> 
                         </div>
                       
