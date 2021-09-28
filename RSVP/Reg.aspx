@@ -31,7 +31,6 @@ runat="server"></asp:TextBox>
  <asp:CheckBox ID="CheckBoxYN" runat="server" />
  </div>
  <div>
- <button type="submit">Отправить ответ на приглашение
-RSVP</button>
+ <button type="submit">Отправить ответ на приглашение RSVP</button>
  </div>
 </asp:Content>

@@ -1,10 +1,10 @@
-﻿
-h1 {
+﻿h1 {
     margin: 0px;
     padding: 2px 0;
     font-size: 30px;
     font-weight: bold;
 }
+
 #form1 label {
     width: 120px;
     display: inline-block;
@@ -40,4 +40,9 @@ table, td, th {
     padding: 0 20px;
     display: inline;
     border-right: 1px solid #000000;
+}
+
+.footer {
+    font-size: 18px;
+    text-align: left;
 }
