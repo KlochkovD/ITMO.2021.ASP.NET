@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace ASP.NET
 {
- 
+  
     public class SampleContext : DbContext
     {
         public SampleContext()
