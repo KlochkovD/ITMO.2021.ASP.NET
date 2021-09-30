@@ -13,7 +13,10 @@ namespace WebMVCR1.Controllers
         {
 
             //string res = ExeEnum();
-            string res = ExeStruct();
+            //string res = ExeStruct();
+            //string res = StudyCsharp.SetStatus(15);
+            string res = StudyCsharp.ExeSwitch(StudyCsharp.SetStatus(15));
+
             return res;
 
         }
