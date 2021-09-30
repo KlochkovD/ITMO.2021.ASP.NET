@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSVP", "RSVP\RSVP.csproj", "{75B9A441-EFE7-4FF7-A538-8EFDAA55BB54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVCR1", "WebMVCR1\WebMVCR1.csproj", "{1151625F-21E0-463C-A7D6-8460627F302E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{75B9A441-EFE7-4FF7-A538-8EFDAA55BB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B9A441-EFE7-4FF7-A538-8EFDAA55BB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75B9A441-EFE7-4FF7-A538-8EFDAA55BB54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1151625F-21E0-463C-A7D6-8460627F302E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1151625F-21E0-463C-A7D6-8460627F302E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1151625F-21E0-463C-A7D6-8460627F302E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1151625F-21E0-463C-A7D6-8460627F302E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
