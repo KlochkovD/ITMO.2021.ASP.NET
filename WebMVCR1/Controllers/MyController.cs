@@ -15,9 +15,23 @@ namespace WebMVCR1.Controllers
             //string res = ExeEnum();
             //string res = ExeStruct();
             //string res = StudyCsharp.SetStatus(15);
-            string res = StudyCsharp.ExeSwitch(StudyCsharp.SetStatus(15));
+            // string res = StudyCsharp.ExeSwitch(StudyCsharp.SetStatus(15));
+            string res = ExeFactorial(5);
+            //string res = StudyCsharp.GetFunction(0, 9);
 
             return res;
+
+        }
+
+        public string ExeFactorial(int x)
+        {
+            int f;
+            bool ok = StudyCsharp.Factorial(x, out f);
+            if (ok)
+                return String.Format("Факториал числа {0} равен {1} ",
+                x, f);
+            else
+                return "Невозможно вычислить факториал";
 
         }
         public string ExeEnum()

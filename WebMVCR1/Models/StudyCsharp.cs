@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace WebMVCR1.Models
@@ -40,6 +41,52 @@ namespace WebMVCR1.Models
             }
             return res;
         }
+
+        public static string GetFunction(double x1, double x2)
+        {
+            StringBuilder str = new StringBuilder();
+            double x = x1;
+            do
+            {
+                str.AppendFormat("x = {0:0.##} : y = {1:0.##}; < br > ", x, Math.Pow(x,3));
+               
+                x = x + 0.5;
+            }
+            while (x <= x2);
+            return str.ToString(); ;
+        }
+        
+        public static bool Factorial(int n, out int answer)
+        {
+            int k;
+            int f = 1;
+            bool ok = true;
+            checked
+            {
+                for (k = 2; k <= n; ++k)
+                {
+                    f = f * k;
+                }
+            }
+            try
+            {
+                checked
+                {
+                    for (k = 2; k <= n; ++k)
+                    {
+                        f = f * k;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                f = 0;
+                ok = false;
+            }
+            answer = f;
+            return ok;
+        }
+
 
     }
 
