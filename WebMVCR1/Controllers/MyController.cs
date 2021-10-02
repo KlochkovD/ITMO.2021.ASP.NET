@@ -11,6 +11,8 @@ namespace WebMVCR1.Controllers
     public class MyController : Controller
     {
 
+        private static PersonRepository db = new PersonRepository();
+
         public ViewResult Index()
         {
             int hour = DateTime.Now.Hour;
@@ -20,25 +22,43 @@ namespace WebMVCR1.Controllers
             return View();
         }
 
-
-       /* public string Start(string hel)
+        [HttpGet]
+        public ViewResult InputData()
         {
-
-            //string res = ExeEnum();
-            //string res = ExeStruct();
-            //string res = StudyCsharp.SetStatus(15);
-            // string res = StudyCsharp.ExeSwitch(StudyCsharp.SetStatus(15));
-            //string res = ExeFactorial(5);
-            //string res = StudyCsharp.GetFunction(0, 9);
-            //string res = ExeTriangle();
-            //string res = ExeCircle();
-            //string res = ExePolim();
-            string res = ExeCollection();
-
-            return res;
-
+            return View();
         }
-       */
+
+        [HttpPost]
+        public ViewResult InputData(Person p)
+        {
+            db.AddResponse(p);
+            return View("Hello", p);
+        }
+        public ViewResult OutputData()
+        {
+            ViewBag.Pers = db.GetAllResponses;
+            ViewBag.Count = db.NumberOfPerson;
+            return View("ListPerson");
+        }
+
+        /* public string Start(string hel)
+         {
+
+             //string res = ExeEnum();
+             //string res = ExeStruct();
+             //string res = StudyCsharp.SetStatus(15);
+             // string res = StudyCsharp.ExeSwitch(StudyCsharp.SetStatus(15));
+             //string res = ExeFactorial(5);
+             //string res = StudyCsharp.GetFunction(0, 9);
+             //string res = ExeTriangle();
+             //string res = ExeCircle();
+             //string res = ExePolim();
+             string res = ExeCollection();
+
+             return res;
+
+         }
+        */
         public string ExeCollection()
         {
            /* List<Circle> cirs = new List<Circle>
