@@ -10,7 +10,18 @@ namespace WebMVCR1.Controllers
 {
     public class MyController : Controller
     {
-        public string Start(string hel)
+
+        public ViewResult Index()
+        {
+            int hour = DateTime.Now.Hour;
+            ViewBag.Greeting = hour < 12 ? "Доброе утро" :
+           "Добрый день";
+            ViewData["Mes"] = "хорошего настроения";
+            return View();
+        }
+
+
+       /* public string Start(string hel)
         {
 
             //string res = ExeEnum();
@@ -27,7 +38,7 @@ namespace WebMVCR1.Controllers
             return res;
 
         }
-
+       */
         public string ExeCollection()
         {
            /* List<Circle> cirs = new List<Circle>
