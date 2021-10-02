@@ -2,22 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace MvcCreditApp1.Models
 {
     public class Credit
     {
-        
+
         // ID кредита
-        public virtual int CreditId { get; set; }
+        [DisplayName("ID кредита")]
+        [Required] public virtual int CreditId { get; set; }
         // Название
-        public virtual string Head { get; set; }
+        [DisplayName("Название кредита")]
+        [Required] public virtual string Head { get; set; }
         // Период, на который выдается кредит
-        public virtual int Period { get; set; }
+        [DisplayName("Период")]
+        [Required] public virtual int Period { get; set; }
         // Максимальная сумма кредита
-        public virtual int Sum { get; set; }
+        [DisplayName("Максимальная сумма кредита")]
+        [Required] public virtual int Sum { get; set; }
         // Процентная ставка
-        public virtual int Procent { get; set; }
+        [DisplayName("Ставка")]
+        [Required] public virtual int Procent { get; set; }
     }
 
 }

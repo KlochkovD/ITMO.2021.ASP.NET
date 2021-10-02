@@ -2,18 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
 
 namespace MvcCreditApp1.Models
 {
     public class Bid
     {
+
         // ID заявки
-        public virtual int BidId { get; set; }
+        [Required] public virtual int BidId { get; set; }
         // Имя заявителя
-        public virtual string Name { get; set; }
+        [DisplayName("Имя заявителя")]
+        [Required] public virtual string Name { get; set; }
         // Название кредита
-        public virtual string CreditHead { get; set; }
+        [DisplayName("Название кредита")]
+        [Required] public virtual string CreditHead { get; set; }
         // Дата подачи заявки
-        public virtual DateTime bidDate { get; set; }
+    
+        [DisplayName("Дата подачи заявки")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yy}")]
+
+        [Required] public virtual DateTime bidDate { get; set; }
     }
 }
