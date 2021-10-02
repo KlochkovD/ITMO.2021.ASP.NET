@@ -21,11 +21,52 @@ namespace WebMVCR1.Controllers
             //string res = StudyCsharp.GetFunction(0, 9);
             //string res = ExeTriangle();
             //string res = ExeCircle();
-            string res = ExePolim();
+            //string res = ExePolim();
+            string res = ExeCollection();
 
             return res;
 
         }
+
+        public string ExeCollection()
+        {
+           /* List<Circle> cirs = new List<Circle>
+            {
+            new Circle(12),
+            new Circle(5),
+            new Circle(15),
+            new Circle(6)
+
+            };
+            cirs.Add(new Circle(7));
+            cirs.Sort();
+            StringBuilder str = new StringBuilder();
+            foreach (Shape item in cirs)
+            {
+                str.AppendFormat("Это фигура {0}", item.Name + "<p>");
+            }
+            return str.ToString();
+           */
+
+            List<Triangle> trg = new List<Triangle>
+            {
+            new Triangle(12,5,4),
+            new Triangle(5,8,7),
+            new Triangle(15,16,14),
+            new Triangle(6,3,9)
+            };
+            trg.Add(new Triangle(7, 5, 6));
+            trg.Sort();
+            StringBuilder str = new StringBuilder();
+            foreach (Shape item in trg)
+            {
+                str.AppendFormat("Это фигура {0}", item.Name + "<p>");
+            }
+            return str.ToString();
+
+
+        }
+
 
         public string ExePolim()
         {

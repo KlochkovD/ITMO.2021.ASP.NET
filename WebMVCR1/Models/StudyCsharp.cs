@@ -90,8 +90,15 @@ namespace WebMVCR1.Models
 
     }
 
-    public class Triangle : Shape
+    public class Triangle : Shape, IComparable<Triangle>
     {
+        public int CompareTo(Triangle other)
+        {
+            if (this.Area == other.Area) return 0;
+            else if (this.Area > other.Area) return 1;
+            else return -1;
+        }
+
 
         public double Stb { get; set; }
         public double Stc { get; set; }
@@ -112,8 +119,14 @@ namespace WebMVCR1.Models
         }
     }
 
-    public class Circle : Shape
+    public class Circle : Shape, IComparable<Circle>
     {
+        public int CompareTo(Circle other)
+        {
+            if (this.Area == other.Area) return 0;
+            else if (this.Area > other.Area) return 1;
+            else return -1;
+        }
         public Circle(double a) { St = a; }
         public double Dlina { get { double p = 2 * Math.PI * St; return p; } }
         public double Area { get { double sq = Math.PI * St * St; return sq; } }
