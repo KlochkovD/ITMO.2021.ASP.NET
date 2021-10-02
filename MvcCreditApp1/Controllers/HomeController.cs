@@ -11,6 +11,14 @@ namespace MvcCreditApp1.Controllers
     {
         private CreditContext db = new CreditContext();
 
+        public ActionResult Index()
+        {
+            var allCredits = db.Credits.ToList<Credit>();
+            ViewBag.Credits = allCredits;
+            return View();
+        }
+
+
         private void GiveCredits()
         {
             var allCredits = db.Credits.ToList<Credit>();
