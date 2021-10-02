@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSVP", "RSVP\RSVP.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVCR1", "WebMVCR1\WebMVCR1.csproj", "{1151625F-21E0-463C-A7D6-8460627F302E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCreditApp1", "MvcCreditApp1\MvcCreditApp1.csproj", "{09498C2E-F3A9-444C-86C8-D67B998ADCEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1151625F-21E0-463C-A7D6-8460627F302E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1151625F-21E0-463C-A7D6-8460627F302E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1151625F-21E0-463C-A7D6-8460627F302E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09498C2E-F3A9-444C-86C8-D67B998ADCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09498C2E-F3A9-444C-86C8-D67B998ADCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09498C2E-F3A9-444C-86C8-D67B998ADCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09498C2E-F3A9-444C-86C8-D67B998ADCEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
