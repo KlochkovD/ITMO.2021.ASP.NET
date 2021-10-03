@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -9,13 +8,17 @@ using System.Web;
 using System.Web.Mvc;
 using MvcCreditApp1.Models;
 
+
+
 namespace MvcCreditApp1.Controllers
 {
     public class BidsController : Controller
     {
         private CreditContext db = new CreditContext();
 
-        // GET: Bids
+             
+
+
         public ActionResult Index()
         {
             return View(db.Bids.ToList());
