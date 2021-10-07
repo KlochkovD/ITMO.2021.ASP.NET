@@ -53,7 +53,7 @@
                          <asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Информация о студентах" />
                          <asp:MenuItem NavigateUrl="~/FirstFive.aspx" Text="Лучшие 5 студентов" />
                          <asp:MenuItem NavigateUrl="~/LastFive.aspx" Text="Худшие 5 студентов" />
-                         <asp:MenuItem NavigateUrl="~/Rating.aspx" Text="Подсчет баллов" />
+                         <asp:MenuItem NavigateUrl="~/SumRat.aspx" Text="Подсчет баллов" />
                      </Items>
                  </asp:Menu>
              </div>

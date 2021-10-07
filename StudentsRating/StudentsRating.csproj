@@ -79,6 +79,7 @@
     <Content Include="StudentsData.aspx" />
     <Content Include="Styles.css" />
     <Content Include="Summary.aspx" />
+    <Content Include="SumRat.aspx" />
     <Content Include="Web.config" />
     <Content Include="FirstFive.aspx" />
   </ItemGroup>
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="FirstFive.aspx.designer.cs">
       <DependentUpon>FirstFive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SumRat.aspx.cs">
+      <DependentUpon>SumRat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SumRat.aspx.designer.cs">
+      <DependentUpon>SumRat.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
