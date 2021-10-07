@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="StudentsRating.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>StudentsRating</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+
+
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #0000FF;
+        }
+        .auto-style3 {
+            height: 56px;
+        }
+        .auto-style4 {
+            height: 41px;
+        }
+        .auto-style5 {
+            width: 192px;
+            height: 262px;
+        }
+        .auto-style6 {
+            height: 262px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+        </div>
+    <table align="center" class="auto-style1">
+        <tr>
+             <td colspan="2" class="auto-style3">&nbsp;
+              <h2>StudentsRating</h2>
+             </td>
+        </tr>
+         <tr>
+         <td class="auto-style5">
+             <div class="menu">
+                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" ForeColor="Red" Orientation="Vertical">
+                     <Items>
+                         <asp:MenuItem NavigateUrl="~/Start.aspx" Text="Главная" />
+                         <asp:MenuItem NavigateUrl="~/StudentsData.aspx" Text="Ввод данных" />
+                         <asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Информация о студентах" />
+                         <asp:MenuItem NavigateUrl="~/FirstFive.aspx" Text="Лучшие 5 студентов" />
+                         <asp:MenuItem NavigateUrl="~/LastFive.aspx" Text="Худшие 5 студентов" />
+                         <asp:MenuItem NavigateUrl="~/SumRating.aspx" Text="Подсчет баллов" />
+                     </Items>
+                 </asp:Menu>
+             </div>
+        </td>
+        <td class="auto-style6">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             </td>
+        </tr>
+        </table>
+    </form>
+    </body>
+</html>
