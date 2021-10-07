@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Start.aspx.cs" MasterPageFile="~/Site.Master" Inherits="StudentsRating.Start" %>
 
-<asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1" 
-runat="server">
+<asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div>
         <h1>Добро пожаловать!</h1>
